@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+	<title>Office Timer</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="css/extension.css">
+
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="extension.js"></script>
+
+
+  </head>
+  <body>
+	<div class="wrapper">
+		<div id="full">
+			<h1>Good Job!</h1>
+			<br>
+			<small>You have spent <span class="stay-duration"></span> today.</small>
+		</div>
+		<div id="present">
+
+			<div class="times">
+				<div class="entry">Clocked in: <strong class="login-time"></strong></div>
+				<div class="exit">Clock out after: <strong class="logout-time"></strong></div>
+				<br style="clear:both" >
+			</div>
+
+			<div id="counter">
+				<br style="clear:both" >
+			</div>
+
+			<div class="time-summary">It has been <strong><span class="stay-duration"></span></strong> since clocking in.</div>
+		</div>
+		<div id="absent">
+			<h1>Entry not found!</h1>
+		</div>
+		<div id="not-configured">
+			Configure extension to use.
+		</div>
+		<div id="not-logged-in">
+			You need to <a href="http://attendance.cefalolab.com">login</a> first!
+		</div>
+
+		<div class="status">
+			<div style="float: left">Last Entry: <strong class="last-entry"></strong></div>
+			Status on server <span class="server-status"></span>
+		</div>
+	</div>
+  </body>
+</html>
+

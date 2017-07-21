@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Office Timer Settings</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/settings.js"></script>
+</head>
+<body>
+	<div class="container" style="margin:20px 0">
+		<div class="row">
+			<div class="col-sm-4" id="options">
+				<form>
+					<div class="form-group">
+						<label for="employeeId">Employee</label>
+						<select class="form-control" id="employeeId"></select>
+					</div>
+					<div class="form-group">
+						<label>Last Entry Time</label>
+						<div class="row">
+							<div class="col-xs-6">
+								<input type="text" class="form-control" id="entryHours" placeholder="Hours" value="10">
+							</div>
+							<div class="col-xs-6">
+								<input type="text" class="form-control" id="entryMinutes" placeholder="Minutes" value="00">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label>Intended Stay Duration</label>
+						<div class="row">
+							<div class="col-xs-6">
+								<input type="text" class="form-control" id="stayHours" placeholder="Hours" value="9">
+							</div>
+							<div class="col-xs-6">
+								<input type="text" class="form-control" id="stayMinutes" placeholder="Minutes" value="00">
+							</div>
+						</div>
+					</div>
+					<button type="submit" id="save" class="btn btn-default">Save</button>
+					<span class="text-success saved" style="display:none">Saved...</span>
+				</form>
+			</div>
+			<div class="col-sm-4 hidden" id="not-logged-in">
+				You need to <a href="http://attendance.cefalolab.com">login</a> first!
+			</div>
+		</div>
+	</div>
+</body>
+</html>

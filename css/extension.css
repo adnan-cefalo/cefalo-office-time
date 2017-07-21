@@ -1,0 +1,122 @@
+* {
+    font-family: 'Helvetica Neue', serif;
+}
+
+h1 {
+    margin: 0;
+    padding: 5px 0 5px;
+}
+
+.times {
+    background-color: #3a3a3a;
+    color: #FFF;
+    padding: 10px;
+    margin: -10px -10px 0;
+}
+
+.wrapper {
+    width: 400px;
+    max-width: 100%;
+}
+
+#present, #absent, #full {
+    padding: 10px;
+    /*display: none;*/
+}
+
+#not-configured, #not-logged-in {
+    display: none;
+    background-color: #ff5d42;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#absent, #full {
+    display: none;
+    background-color: #ff5d42;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#full {
+    background-color: #4cae4c;
+}
+
+#full.late {
+    background-color: #ffbf20;
+}
+
+#full small {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#counter .title {
+    font-size: 16px;
+    clear: both;
+    height: 128px;
+
+}
+
+.time-summary {
+    text-align: center;
+}
+
+.h_wrapper, .m_wrapper, .s_wrapper {
+    float: left;
+    width:  33.333333%;
+    font-size: 90px;
+    text-align: center;
+    display: block;
+}
+
+.h_wrapper .counter, .m_wrapper .counter, .s_wrapper .counter {
+    line-height: 90px;
+}
+
+.times {
+    clear: both;
+}
+
+.entry {
+    float: left;
+}
+
+.exit {
+    float: right;
+}
+
+.green {
+    color: #3e8f3e;
+}
+
+.yellow {
+    color: #ffbf20;
+}
+
+.green-bg {
+    background-color: #3e8f3e;
+}
+
+.yellow-bg {
+    background-color: #ffbf20;
+}
+
+.red-bg {
+    background-color: #ff5d42;
+}
+
+.status {
+    text-align: right;
+    background-color: #DDDDDD;
+    padding: 4px;
+}
+
+span.server-status {
+    color: #FFF;
+    padding: 5px;
+    margin: -5px -5px -5px 5px;
+}
