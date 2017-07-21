@@ -101,7 +101,7 @@ function setCounter() {
         $('#present').hide();
         $('#full').show();
 
-        if(startTime.isBefore(moment(localStorage.lastEntry, 'HH: mm'))) $('#full').addClass('late');
+        if(endTime.isBefore(moment(localStorage.lastEntry, 'HH: mm'))) $('#full').addClass('late');
         return;
     }
 
