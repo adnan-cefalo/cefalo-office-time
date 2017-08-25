@@ -9,11 +9,11 @@ $(document).ready(function(){
 
     var query_params = {
         userId: localStorage.employeeID,
-        fromDateString: moment().format('D-MMM-YYYY'),
-        toDateString: moment().format('D-MMM-YYYY'),
+        fromDateString: moment().format('DD-MMM-YYYY'),
+        toDateString: moment().format('DD-MMM-YYYY'),
         includeWeekend: false,
         includeholiday: false,
-        statusType: ''
+        statusType: null
     };
 
     var url = 'http://attendance.cefalolab.com/Report/GetEmployeeAttendanceRecords?';

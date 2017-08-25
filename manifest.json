@@ -3,7 +3,7 @@
 
   "name": "Cefalo Time Tracker",
   "description": "Do the calculations of office time for you.",
-  "version": "1.1.1",
+  "version": "1.1.2",
 
   "icons": {
     "128": "icon.png"
